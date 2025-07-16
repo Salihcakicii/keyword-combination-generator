@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Keyword Kombinasyon Üretici</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Keyword Kombinasyon Üretici</h1>
+
+    <label>1. Grup:</label>
+    <textarea id="group1" placeholder="örnek: araba, motor, lastik"></textarea>
+
+    <label>2. Grup:</label>
+    <textarea id="group2" placeholder="örnek: istanbul, ankara"></textarea>
+
+    <label>3. Grup (İsteğe bağlı):</label>
+    <textarea id="group3" placeholder="örnek: fiyatları, servisi"></textarea>
+
+    <button onclick="generateCombinations()">Oluştur</button>
+
+    <h3>Sonuç:</h3>
+    <textarea id="result" rows="10" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
