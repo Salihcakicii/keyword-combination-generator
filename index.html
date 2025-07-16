@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Keyword Kombinasyon Üretici</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Keyword Kombinasyon Üretici</h1>
+    <h1>🧠 Keyword Kombinasyon Üretici</h1>
+    <p class="subtitle">Farklı anahtar kelime kombinasyonlarını hızlıca oluşturun.</p>
 
-    <label>1. Grup:</label>
-    <textarea id="group1" placeholder="örnek: araba, motor, lastik"></textarea>
+    <textarea id="group1" placeholder="1. kelime grubu (örneğin: ucuz, kaliteli)"></textarea>
+    <textarea id="group2" placeholder="2. kelime grubu (örneğin: telefon, bilgisayar)"></textarea>
+    <textarea id="group3" placeholder="3. kelime grubu (isteğe bağlı, örn: fiyatları, modelleri)"></textarea>
 
-    <label>2. Grup:</label>
-    <textarea id="group2" placeholder="örnek: istanbul, ankara"></textarea>
+    <button id="generateBtn">Kombinasyonları Oluştur</button>
+    <button id="copyBtn" style="display:none;">Kopyala</button>
+    <button id="downloadBtn" style="display:none;">İndir (.txt)</button>
 
-    <label>3. Grup (İsteğe bağlı):</label>
-    <textarea id="group3" placeholder="örnek: fiyatları, servisi"></textarea>
-
-    <button onclick="generateCombinations()">Oluştur</button>
-
-    <h3>Sonuç:</h3>
-    <textarea id="result" rows="10" readonly></textarea>
+    <div id="outputBox" class="output-box" style="display:none;"></div>
   </div>
 
   <script src="script.js"></script>
