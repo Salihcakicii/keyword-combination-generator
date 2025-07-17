@@ -1,110 +1,66 @@
-/* Genel ayarlar */
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fbfc;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #fff;
-  overflow-x: hidden;
-  color: #333;
+  padding: 0;
 }
 
-/* Hareketli arka plan çizgileri */
-.background-lines {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  z-index: -1;
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-}
-
-.line {
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to bottom, #2196f3, transparent);
-  animation: float 6s infinite ease-in-out;
-  opacity: 0.4;
-}
-
-.line:nth-child(odd) {
-  animation-delay: 1s;
-}
-.line:nth-child(even) {
-  animation-delay: 2.5s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-/* Konteyner */
 .container {
-  max-width: 800px;
-  margin: 120px auto 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Başlık */
 h1 {
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   color: #1a1a1a;
 }
 
-/* Etiketler ve giriş alanları */
 label {
-  display: block;
   font-weight: 600;
-  margin-top: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  display: block;
 }
 
 textarea {
   width: 100%;
-  padding: 10px;
-  font-size: 15px;
-  border: 1px solid #ccc;
   border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 16px;
   resize: vertical;
-  min-height: 100px;
-  background: #fff;
+  box-sizing: border-box;
 }
 
-/* Buton */
 button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #2196f3;
-  color: white;
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
   border: none;
   border-radius: 8px;
+  color: white;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #1976d2;
+  background-color: #0056b3;
 }
 
-/* Sonuç kutusu */
-#result {
+.output-section {
   margin-top: 30px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  font-size: 15px;
-  white-space: pre-line;
+}
+
+#output {
+  margin-top: 10px;
+  background: #f0f0f0;
+  font-family: monospace;
+  font-weight: 600;
+  resize: none;
 }
