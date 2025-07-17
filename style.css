@@ -1,11 +1,13 @@
+/* Genel ayarlar */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: #fff;
   overflow-x: hidden;
+  color: #333;
 }
 
-/* Hareketli çizgiler */
+/* Hareketli arka plan çizgileri */
 .background-lines {
   position: fixed;
   top: 0;
@@ -40,4 +42,69 @@ body {
   50% {
     transform: translateY(10px);
   }
+}
+
+/* Konteyner */
+.container {
+  max-width: 800px;
+  margin: 120px auto 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Başlık */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+/* Etiketler ve giriş alanları */
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 100px;
+  background: #fff;
+}
+
+/* Buton */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+/* Sonuç kutusu */
+#result {
+  margin-top: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  white-space: pre-line;
 }
