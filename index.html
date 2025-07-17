@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Keyword Kombinasyon Üretici</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Hareketli arka plan çizgileri -->
-<div class="background-lines">
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-</div>
-
   <div class="container">
-    <h1>🧠 Keyword Kombinasyon Üretici</h1>
-    <p class="subtitle">Farklı anahtar kelime kombinasyonlarını hızlıca oluşturun.</p>
+    <h1>Keyword Kombinasyon Üretici</h1>
 
-    <textarea id="group1" placeholder="1. kelime grubu (örneğin: ucuz, kaliteli)"></textarea>
-    <textarea id="group2" placeholder="2. kelime grubu (örneğin: telefon, bilgisayar)"></textarea>
-    <textarea id="group3" placeholder="3. kelime grubu (isteğe bağlı, örn: fiyatları, modelleri)"></textarea>
+    <label for="keywordsInput">Anahtar Kelimeleri Satır Satır Girin:</label>
+    <textarea id="keywordsInput" rows="6" placeholder="örnek: SEO&#10;Backlink&#10;Anahtar Kelime"></textarea>
 
-    <button id="generateBtn">Kombinasyonları Oluştur</button>
-    <button id="copyBtn" style="display:none;">Kopyala</button>
-    <button id="downloadBtn" style="display:none;">İndir (.txt)</button>
+    <button onclick="generateCombinations()">Kombinasyonları Oluştur</button>
 
-    <div id="outputBox" class="output-box" style="display:none;"></div>
+    <div class="output-section">
+      <h2>Oluşan Kombinasyonlar</h2>
+      <textarea id="output" rows="10" readonly></textarea>
+      <button onclick="copyOutput()">Kopyala</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
